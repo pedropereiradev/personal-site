@@ -7,10 +7,9 @@ import clsx from 'clsx';
 
 export function ContentSelector() {
   const pathname = usePathname();
-  console.log(pathname);
 
   return (
-    <section className="flex space-x-2">
+    <section className="flex space-x-2 mb-8">
       <Link href="/" passHref>
         <Button
           size="sm"

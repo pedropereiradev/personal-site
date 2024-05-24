@@ -29,14 +29,14 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <main className="max-w-5xl mx-auto min-h-screen">
+          <main className="max-w-5xl mx-auto tracking-tight">
             <Separator className="mb-4" />
             <ContentSelector />
             {children}
           </main>
-          <footer className="max-w-5xl mx-auto">
+          <footer className="max-w-5xl mx-auto tracking-tight">
             <Separator className="my-4" />
-            <section className="flex flex-col items-center space-y-4 py-8 text-muted-foreground tracking-tight">
+            <section className="flex flex-col items-center space-y-4 py-8 text-muted-foreground">
               <Code2Icon className="w-8 h-8" />
               <p className="text-center">
                 &copy;{new Date().getFullYear()} Pedro Pereira
