@@ -18,9 +18,13 @@ import {
   contactEmailSchema,
 } from '@/zod-schemas/email-schema';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { Loader2 } from 'lucide-react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 
 export const ContactMeForm = () => {
+  const [loading, setLoading] = useState(false);
+
   const form = useForm<contactEmailSchema>({
     resolver: zodResolver(ContactEmailSchema),
     defaultValues: {
@@ -32,6 +36,7 @@ export const ContactMeForm = () => {
 
   async function onSubmit(data: contactEmailSchema) {
     try {
+      setLoading(true);
       const response = await fetch('/api/send', {
         method: 'POST',
         headers: {
@@ -66,6 +71,10 @@ export const ContactMeForm = () => {
           </p>
         ),
       });
+    } finally {
+      setLoading(false);
+
+      form.reset();
     }
   }
 
@@ -74,6 +83,7 @@ export const ContactMeForm = () => {
       <form onSubmit={form.handleSubmit(onSubmit)} className="w-2/3 space-y-6">
         <FormField
           control={form.control}
+          disabled={loading}
           name="fullName"
           render={({ field }) => (
             <FormItem>
@@ -88,6 +98,7 @@ export const ContactMeForm = () => {
         />
         <FormField
           control={form.control}
+          disabled={loading}
           name="email"
           render={({ field }) => (
             <FormItem>
@@ -102,6 +113,7 @@ export const ContactMeForm = () => {
         />
         <FormField
           control={form.control}
+          disabled={loading}
           name="description"
           render={({ field }) => (
             <FormItem>
@@ -117,7 +129,16 @@ export const ContactMeForm = () => {
             </FormItem>
           )}
         />
-        <Button type="submit">Submit</Button>
+        <Button type="submit" disabled={loading}>
+          {loading ? (
+            <>
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+              Please wait ...
+            </>
+          ) : (
+            'Send Message'
+          )}
+        </Button>
       </form>
     </Form>
   );
