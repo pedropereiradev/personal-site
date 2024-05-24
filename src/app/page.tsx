@@ -11,7 +11,7 @@ import { BrickWall, CodeSquareIcon, StoreIcon } from 'lucide-react';
 
 export default function Home() {
   return (
-    <main className="max-w-5xl mx-auto flex flex-col space-y-8 tracking-tight">
+    <main className="max-w-5xl mx-auto flex flex-col space-y-8 tracking-tight px-4 md:px-0">
       <section>
         <p className="text-muted-foreground">
           I am a software developer with experience developing solutions for

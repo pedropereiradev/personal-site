@@ -16,7 +16,9 @@ export function Header() {
             className="rounded-full w-16"
           />
           <div>
-            <h1 className="scroll-m-20 text-xl font-semibold">Pedro Pereira</h1>
+            <h1 className="scroll-m-20 text-lg md:text-xl font-semibold">
+              Pedro Pereira
+            </h1>
             <h2 className="text-sm text-muted-foreground">
               Web3 Software Developer
             </h2>
@@ -30,7 +32,7 @@ export function Header() {
             rel="noopener noreferrer"
           >
             <Button variant="ghost" size="icon">
-              <LinkedinIcon className="h-6 w-6" />
+              <LinkedinIcon className="h-6 w-6 text-muted-foreground" />
             </Button>
           </Link>
           <Link
@@ -40,7 +42,7 @@ export function Header() {
             rel="noopener noreferrer"
           >
             <Button variant="ghost" size="icon">
-              <Github className="h-6 w-6" />
+              <Github className="h-6 w-6 text-muted-foreground" />
             </Button>
           </Link>
           <Link
@@ -50,7 +52,7 @@ export function Header() {
             rel="noopener noreferrer"
           >
             <Button variant="ghost" size="icon">
-              <Twitter className="h-6 w-6" />
+              <Twitter className="h-6 w-6 text-muted-foreground" />
             </Button>
           </Link>
         </div>

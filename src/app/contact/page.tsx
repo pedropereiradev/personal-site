@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <main className="max-w-5xl mx-auto flex flex-col space-y-8 tracking-tight">
       <section>
-        <p className="text-muted-foreground">
+        <p className="text-muted-foreground px-4 md:px-0">
           Feel free to reach out, I will get back to you as soon as possible.
           You can also find me on{' '}
           <Link

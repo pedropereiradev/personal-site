@@ -30,7 +30,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <main className="max-w-5xl mx-auto tracking-tight">
+          <main className="max-w-5xl mx-auto tracking-tight min-h-screen">
             <Separator className="mb-4" />
             <ContentSelector />
             {children}

@@ -9,7 +9,7 @@ export function ContentSelector() {
   const pathname = usePathname();
 
   return (
-    <section className="flex space-x-2 mb-8">
+    <section className="flex md:space-x-2 mb-8 px-4 md:px-0">
       <Link href="/" passHref>
         <Button
           size="sm"
@@ -55,7 +55,7 @@ export function ContentSelector() {
             pathname !== '/contact' && 'text-muted-foreground'
           )}
         >
-          Contact me
+          Contact
         </Button>
       </Link>
     </section>
