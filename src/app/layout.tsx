@@ -6,6 +6,7 @@ import { Header } from '@/components/Header';
 import { Separator } from '@/components/ui/separator';
 import { ContentSelector } from '@/components/ContentSelector';
 import { Code2Icon } from 'lucide-react';
+import { Toaster } from '@/components/ui/toaster';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -44,6 +45,7 @@ export default function RootLayout({
             </section>
           </footer>
         </ThemeProvider>
+        <Toaster />
       </body>
     </html>
   );
