@@ -9,13 +9,19 @@ export function Header() {
   return (
     <header className="flex max-w-5xl mx-auto justify-between p-4 items-center tracking-tight">
       <section className="flex flex-col space-y-2">
-        <Image src={myPicture} alt="My picture" className="rounded-full w-16" />
-        <div>
-          <h1 className="scroll-m-20 text-xl font-semibold">Pedro Pereira</h1>
-          <h2 className="text-sm text-muted-foreground">
-            Web3 Software Developer
-          </h2>
-        </div>
+        <section className="flex items-center gap-4">
+          <Image
+            src={myPicture}
+            alt="My picture"
+            className="rounded-full w-16"
+          />
+          <div>
+            <h1 className="scroll-m-20 text-xl font-semibold">Pedro Pereira</h1>
+            <h2 className="text-sm text-muted-foreground">
+              Web3 Software Developer
+            </h2>
+          </div>
+        </section>
         <div className="pt-4">
           <Link
             href="https://linkedin.com/in/pedropereiradev"
