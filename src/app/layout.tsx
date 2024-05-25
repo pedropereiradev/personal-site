@@ -11,8 +11,8 @@ import { Toaster } from '@/components/ui/toaster';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Portfólio | Pedro Pereira',
-  description: 'Portfólio pessoal onde compartilho meus projetos e ideias.',
+  title: 'Portfolio | Pedro Pereira',
+  description: 'Personal portfolio where i share my projects and ideas.',
 };
 
 export default function RootLayout({
