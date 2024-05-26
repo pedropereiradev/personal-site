@@ -7,6 +7,7 @@ import { Separator } from '@/components/ui/separator';
 import { ContentSelector } from '@/components/ContentSelector';
 import { Code2Icon } from 'lucide-react';
 import { Toaster } from '@/components/ui/toaster';
+import {Analytics} from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -46,6 +47,7 @@ export default function RootLayout({
           </footer>
         </ThemeProvider>
         <Toaster />
+        <Analytics />
       </body>
     </html>
   );
