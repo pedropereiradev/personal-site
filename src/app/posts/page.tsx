@@ -1,5 +1,14 @@
-export default function Posts() {
-  const posts = [];
+import { createClient } from '@/prismicio';
+import { Article } from './components/Article';
+
+export default async function Posts() {
+  const client = createClient();
+
+  const posts = await client.getAllByType('blog_post', {
+    orderings: [
+      { field: 'document.first_publication_date', direction: 'desc' },
+    ],
+  });
 
   if (posts.length === 0) {
     return (
@@ -15,8 +24,12 @@ export default function Posts() {
   }
 
   return (
-    <main className="max-w-5xl mx-auto">
-      <h1>Posts</h1>
+    <main className="max-w-5xl mx-auto text-stone-700 dark:text-stone-300">
+      <section>
+        {posts.map((post) => (
+          <Article key={post.id} post={post} />
+        ))}
+      </section>
     </main>
   );
 }

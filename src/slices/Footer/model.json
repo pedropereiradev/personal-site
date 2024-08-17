@@ -1,0 +1,36 @@
+{
+  "id": "footer",
+  "type": "SharedSlice",
+  "name": "Footer",
+  "description": "Footer",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "social_network": {
+          "type": "Group",
+          "config": {
+            "label": "Social Network",
+            "repeat": true,
+            "fields": {
+              "social_network_link": {
+                "type": "Link",
+                "config": {
+                  "label": "Social Network Link",
+                  "placeholder": "",
+                  "select": null
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

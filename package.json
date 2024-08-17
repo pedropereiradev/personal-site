@@ -6,10 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "slicemachine": "start-slicemachine"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.4.2",
+    "@prismicio/client": "^7.8.0",
+    "@prismicio/next": "^1.6.0",
+    "@prismicio/react": "^2.8.0",
+    "@radix-ui/react-avatar": "^1.1.0",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-separator": "^1.0.3",
@@ -30,12 +35,14 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@slicemachine/adapter-next": "^0.3.45",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "postcss": "^8",
+    "slice-machine-ui": "^2.4.1",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
