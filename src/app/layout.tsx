@@ -7,7 +7,9 @@ import { Separator } from '@/components/ui/separator';
 import { ContentSelector } from '@/components/ContentSelector';
 import { Code2Icon } from 'lucide-react';
 import { Toaster } from '@/components/ui/toaster';
-import {Analytics} from '@vercel/analytics/react';
+import { Analytics } from '@vercel/analytics/react';
+import { PrismicPreview } from '@prismicio/next';
+import { repositoryName } from '@/prismicio';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -48,6 +50,7 @@ export default function RootLayout({
         </ThemeProvider>
         <Toaster />
         <Analytics />
+        <PrismicPreview repositoryName={repositoryName} />
       </body>
     </html>
   );
