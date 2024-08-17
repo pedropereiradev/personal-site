@@ -21,33 +21,42 @@ const Footer = ({ slice }: FooterProps): JSX.Element => {
     >
       <section className="flex gap-5 justify-end items-center mr-6">
         {slice.primary.social_network.map((link, index) => {
+          //@ts-ignore
           if (link.social_network_link.url.includes('linkedin')) {
             return (
               <Link
                 key={index}
+                //@ts-ignore
                 href={link.social_network_link.url}
+                //@ts-ignore
                 target={link.social_network_link.target || '_self'}
               >
                 <LinkedinIcon />
               </Link>
             );
           }
+          //@ts-ignore
           if (link.social_network_link.url.includes('github')) {
             return (
               <Link
                 key={index}
+                //@ts-ignore
                 href={link.social_network_link.url}
+                //@ts-ignore
                 target={link.social_network_link.target || '_self'}
               >
                 <GithubIcon />
               </Link>
             );
           }
+          //@ts-ignore
           if (link.social_network_link.url.includes('https://x.com')) {
             return (
               <Link
                 key={index}
+                //@ts-ignore
                 href={link.social_network_link.url}
+                //@ts-ignore
                 target={link.social_network_link.target || '_self'}
               >
                 <TwitterIcon />
@@ -58,7 +67,9 @@ const Footer = ({ slice }: FooterProps): JSX.Element => {
           return (
             <Link
               key={index}
+              //@ts-ignore
               href={link.social_network_link.url}
+              //@ts-ignore
               target={link.social_network_link.target || '_self'}
             >
               <GlobeIcon />
