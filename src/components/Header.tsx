@@ -1,9 +1,10 @@
-import { ToggleThemeButton } from './ToggleThemeButton';
-import myPicture from '../../public/assets/my-picture.jpg';
-import Image from 'next/image';
-import { Button } from './ui/button';
-import { Github, LinkedinIcon, Twitter } from 'lucide-react';
-import Link from 'next/link';
+import { ToggleThemeButton } from "./ToggleThemeButton";
+import { LanguageSwitcher } from "./LanguageSwitcher";
+import myPicture from "../../public/assets/my-picture.jpg";
+import Image from "next/image";
+import { Button } from "./ui/button";
+import { Github, LinkedinIcon, Twitter } from "lucide-react";
+import Link from "next/link";
 
 export function Header() {
   return (
@@ -19,9 +20,7 @@ export function Header() {
             <h1 className="scroll-m-20 text-lg md:text-xl font-semibold">
               Pedro Pereira
             </h1>
-            <h2 className="text-sm text-muted-foreground">
-              Web3 Software Developer
-            </h2>
+            <h2 className="text-sm text-muted-foreground">Software Engineer</h2>
           </div>
         </section>
         <div className="pt-4">
@@ -57,7 +56,10 @@ export function Header() {
           </Link>
         </div>
       </section>
-      <ToggleThemeButton />
+      <div className="flex items-center gap-2">
+        <LanguageSwitcher />
+        <ToggleThemeButton />
+      </div>
     </header>
   );
 }

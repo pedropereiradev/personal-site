@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "about": "About",
+    "posts": "Posts",
+    "newsletter": "Newsletter",
+    "contact": "Contact"
+  },
+  "home": {
+    "aboutMe": "About Me",
+    "professionalSummary": "Software Engineer with <yearsOfExperience>3 years</yearsOfExperience> of experience developing scalable backend systems and full-stack applications, with a focus on <specialties>fintech, blockchain, and Web3</specialties>. Experienced in technical leadership, high-performance API architecture, and team mentorship. Notable contributions include open-source work on <fuelNetwork>Fuel Network's wallet connectivity infrastructure</fuelNetwork> and development of innovative DeFi solutions.",
+    "technicalSkills": "Technical Skills",
+    "languages": "Languages",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "cloudInfrastructure": "Cloud & Infrastructure",
+    "blockchainWeb3": "Blockchain & Web3",
+    "databasesMessaging": "Databases & Messaging",
+    "experience": "Experience",
+    "currentRole": "Present",
+    "remote": "Remote",
+    "featuredProjects": "Featured Projects",
+    "techStack": "Tech Stack:",
+    "keyFeatures": "Key Features:",
+    "viewOnGithub": "View on GitHub",
+    "education": "Education",
+    "certifications": "Certifications",
+    "spokenLanguages": "Languages",
+    "portuguese": "Portuguese",
+    "native": "Native",
+    "english": "English",
+    "advanced": "Advanced"
+  },
+  "experience": {
+    "infinitybase": {
+      "company": "Infinitybase",
+      "title": "Software Engineer",
+      "period": "Oct 2023 - Nov 2025",
+      "achievements": [
+        "Served as <technicalLead>technical lead</technicalLead> driving complete restructuring of service architecture for APIaaS, designed to scale to millions of requests",
+        "Developed comprehensive technical documentation including RFCs, ERD diagrams, and sequence diagrams to ensure technical alignment and execution clarity",
+        "Acted as team's technical reference, translating business requirements into executable technical tasks and mentoring developers",
+        "Built vehicle restriction consultation bot using AWS Lambda, Twilio, and AWS Lex with payment processing via PIX and credit card",
+        "Developed escrow bot that acts as trusted third party in vehicle transactions, automating fund release and reducing fraud",
+        "Implemented scalable backend API using Bun, Elysia, PostgreSQL, and BullMQ for asynchronous messaging",
+        "Conducted code reviews and established quality standards in agile environment for fintech solutions"
+      ]
+    },
+    "ganjaMarket": {
+      "company": "Ganja Market",
+      "title": "Software Engineer",
+      "period": "Dec 2022 - Aug 2023",
+      "achievements": [
+        "Developed and maintained full-stack e-commerce marketplace using Node.js, NestJS, Next.js, and MongoDB, serving multiple vendors and customers",
+        "Implemented payment processing system with split payment and automated fee calculation for multi-vendor marketplace",
+        "Built custom discount and coupon management system, improving customer engagement and retention through personalized promotional campaigns",
+        "Provided technical leadership and mentorship, establishing coding standards and ensuring adherence to project timelines",
+        "Contributed to architectural technical decisions and platform roadmap"
+      ]
+    }
+  },
+  "projects": {
+    "agroshield": {
+      "title": "Decentralized Crop Insurance Platform",
+      "description": "Final Graduation Project • 2025",
+      "content": "Full-stack decentralized parametric insurance platform addressing Brazil's agricultural insurance gap (only 16% coverage vs 85% in US). Reduces claim processing from 3-6 months to 24-48 hours through automated smart contract payouts.",
+      "features": [
+        "Modular monorepo architecture with smart contracts",
+        "Weather data integration with 30+ years of historical data",
+        "Automated parametric insurance payouts",
+        "Three specialized smart contracts (NFT, Manager, Contract)"
+      ]
+    },
+    "fuelConnectors": {
+      "title": "Fuel Network Open Source",
+      "description": "Open Source Contributor • Mar 2024 - Jun 2024",
+      "content": "Contributed to Fuel Network's wallet connectivity infrastructure, developing cross-chain connectors that bridge EVM and Solana wallets to the Fuel ecosystem.",
+      "features": [
+        "Built wallet connectors for EVM and Solana integration",
+        "Enhanced user onboarding experience",
+        "Redesigned UX for connector testing platform",
+        "Improved modal interfaces for better developer experience"
+      ]
+    }
+  },
+  "education": {
+    "title": "Education",
+    "systemsAnalysis": {
+      "degree": "Systems Analysis and Development",
+      "type": "Associate Degree (3-year program)",
+      "institution": "UniSenac Pelotas",
+      "year": "2025"
+    },
+    "electronics": {
+      "degree": "Electronics",
+      "type": "Technical Certificate",
+      "institution": "IFSul Pelotas",
+      "year": "2019"
+    }
+  },
+  "certifications": {
+    "title": "Certifications",
+    "awsAcademy": {
+      "title": "AWS Academy Graduate",
+      "description": "AWS Academy Cloud Foundations",
+      "year": "2024"
+    }
+  },
+  "resume": {
+    "title": "Resume",
+    "subtitle": "Software Engineer • 3 years of experience",
+    "downloadPdf": "Download PDF",
+    "contactInformation": "Contact Information",
+    "professionalSummary": "Professional Summary"
+  },
+  "footer": {
+    "copyright": "© {year} Pedro Pereira"
+  },
+  "newsletter": {
+    "description": "We are creating a newsletter about tech topics to keep you updated on the latest news and updates."
+  },
+  "contact": {
+    "intro": "Feel free to reach out, I will get back to you as soon as possible. You can also find me on <linkedin>Linkedin</linkedin>.",
+    "form": {
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Pedro Pereira",
+      "fullNameDescription": "Please enter your full name",
+      "email": "Email",
+      "emailPlaceholder": "email@email.com",
+      "emailDescription": "Please enter your email",
+      "message": "Message",
+      "messagePlaceholder": "Feel free to send me a message.",
+      "sendButton": "Send Message",
+      "sending": "Please wait ...",
+      "successTitle": "Your message was sent successfully!",
+      "successDescription": "Thank you for reaching out, I will get back to you as soon as possible.",
+      "errorTitle": "There was an error sending your message!",
+      "errorDescription": "Please try again later or contact me through my linkedin."
+    }
+  }
+}

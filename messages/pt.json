@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "posts": "Artigos",
+    "newsletter": "Newsletter",
+    "contact": "Contato"
+  },
+  "home": {
+    "aboutMe": "Sobre Mim",
+    "professionalSummary": "Engenheiro de Software com <yearsOfExperience>3 anos</yearsOfExperience> de experiência desenvolvendo sistemas backend escaláveis e aplicações full-stack, com foco em <specialties>fintech, blockchain e Web3</specialties>. Experiente em liderança técnica, arquitetura de API de alta performance e mentoria de equipes. Contribuições notáveis incluem trabalho open-source na <fuelNetwork>infraestrutura de conectividade de carteiras da Fuel Network</fuelNetwork> e desenvolvimento de soluções DeFi inovadoras.",
+    "technicalSkills": "Habilidades Técnicas",
+    "languages": "Linguagens",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "cloudInfrastructure": "Cloud & Infraestrutura",
+    "blockchainWeb3": "Blockchain & Web3",
+    "databasesMessaging": "Bancos de Dados & Mensageria",
+    "experience": "Experiência",
+    "currentRole": "Presente",
+    "remote": "Remoto",
+    "featuredProjects": "Projetos em Destaque",
+    "techStack": "Stack Tecnológica:",
+    "keyFeatures": "Principais Funcionalidades:",
+    "viewOnGithub": "Ver no GitHub",
+    "education": "Educação",
+    "certifications": "Certificações",
+    "spokenLanguages": "Idiomas",
+    "portuguese": "Português",
+    "native": "Nativo",
+    "english": "Inglês",
+    "advanced": "Avançado"
+  },
+  "experience": {
+    "infinitybase": {
+      "company": "Infinitybase",
+      "title": "Engenheiro de Software",
+      "period": "Out 2023 - Nov 2025",
+      "achievements": [
+        "Atuei como <technicalLead>líder técnico</technicalLead> liderando a reestruturação completa da arquitetura de serviços para APIaaS, projetada para escalar a milhões de requisições",
+        "Desenvolvi documentação técnica abrangente incluindo RFCs, diagramas ERD e diagramas de sequência para garantir alinhamento técnico e clareza na execução",
+        "Atuei como referência técnica da equipe, traduzindo requisitos de negócio em tarefas técnicas executáveis e orientando desenvolvedores",
+        "Construí bot de consulta de restrições veiculares usando AWS Lambda, Twilio e AWS Lex com processamento de pagamento via PIX e cartão de crédito",
+        "Desenvolvi bot de escrow que atua como terceiro confiável em transações veiculares, automatizando liberação de fundos e reduzindo fraudes",
+        "Implementei API backend escalável usando Bun, Elysia, PostgreSQL e BullMQ para mensageria assíncrona",
+        "Conduzi revisões de código e estabeleci padrões de qualidade em ambiente ágil para soluções fintech"
+      ]
+    },
+    "ganjaMarket": {
+      "company": "Ganja Market",
+      "title": "Engenheiro de Software",
+      "period": "Dez 2022 - Ago 2023",
+      "achievements": [
+        "Desenvolvi e mantive marketplace e-commerce full-stack usando Node.js, NestJS, Next.js e MongoDB, atendendo múltiplos vendedores e clientes",
+        "Implementei sistema de processamento de pagamentos com divisão de pagamento e cálculo automático de taxas para marketplace multi-vendor",
+        "Construí sistema personalizado de gerenciamento de descontos e cupons, melhorando engajamento e retenção de clientes através de campanhas promocionais personalizadas",
+        "Forneci liderança técnica e mentoria, estabelecendo padrões de código e garantindo aderência aos cronogramas do projeto",
+        "Contribuí para decisões técnicas arquiteturais e roadmap da plataforma"
+      ]
+    }
+  },
+  "projects": {
+    "agroshield": {
+      "title": "Plataforma de Seguro Agrícola Descentralizado",
+      "description": "Projeto de Conclusão de Curso • 2025",
+      "content": "Plataforma full-stack de seguro paramétrico descentralizado abordando a lacuna de seguro agrícola do Brasil (apenas 16% de cobertura vs 85% nos EUA). Reduz o processamento de sinistros de 3-6 meses para 24-48 horas através de pagamentos automatizados via smart contracts.",
+      "features": [
+        "Arquitetura monorepo modular com smart contracts",
+        "Integração de dados meteorológicos com 30+ anos de dados históricos",
+        "Pagamentos paramétricos de seguro automatizados",
+        "Três smart contracts especializados (NFT, Manager, Contract)"
+      ]
+    },
+    "fuelConnectors": {
+      "title": "Fuel Network Open Source",
+      "description": "Contribuidor Open Source • Mar 2024 - Jun 2024",
+      "content": "Contribuí para a infraestrutura de conectividade de carteiras da Fuel Network, desenvolvendo conectores cross-chain que fazem ponte entre carteiras EVM e Solana para o ecossistema Fuel.",
+      "features": [
+        "Construí conectores de carteira para integração EVM e Solana",
+        "Aprimorei a experiência de onboarding de usuários",
+        "Redesenhei UX da plataforma de teste de conectores",
+        "Melhorei interfaces modais para melhor experiência do desenvolvedor"
+      ]
+    }
+  },
+  "education": {
+    "title": "Educação",
+    "systemsAnalysis": {
+      "degree": "Análise e Desenvolvimento de Sistemas",
+      "type": "Tecnólogo (programa de 3 anos)",
+      "institution": "UniSenac Pelotas",
+      "year": "2025"
+    },
+    "electronics": {
+      "degree": "Eletrônica",
+      "type": "Certificado Técnico",
+      "institution": "IFSul Pelotas",
+      "year": "2019"
+    }
+  },
+  "certifications": {
+    "title": "Certificações",
+    "awsAcademy": {
+      "title": "AWS Academy Graduate",
+      "description": "AWS Academy Cloud Foundations",
+      "year": "2024"
+    }
+  },
+  "resume": {
+    "title": "Currículo",
+    "subtitle": "Engenheiro de Software • 3 anos de experiência",
+    "downloadPdf": "Baixar PDF",
+    "contactInformation": "Informações de Contato",
+    "professionalSummary": "Resumo Profissional"
+  },
+  "footer": {
+    "copyright": "© {year} Pedro Pereira"
+  },
+  "newsletter": {
+    "description": "Estamos criando uma newsletter sobre tópicos de tecnologia para mantê-lo atualizado sobre as últimas notícias e atualizações."
+  },
+  "contact": {
+    "intro": "Sinta-se à vontade para entrar em contato, responderei o mais breve possível. Você também pode me encontrar no <linkedin>Linkedin</linkedin>.",
+    "form": {
+      "fullName": "Nome Completo",
+      "fullNamePlaceholder": "Pedro Pereira",
+      "fullNameDescription": "Por favor, insira seu nome completo",
+      "email": "Email",
+      "emailPlaceholder": "email@email.com",
+      "emailDescription": "Por favor, insira seu email",
+      "message": "Mensagem",
+      "messagePlaceholder": "Sinta-se à vontade para me enviar uma mensagem.",
+      "sendButton": "Enviar Mensagem",
+      "sending": "Por favor, aguarde ...",
+      "successTitle": "Sua mensagem foi enviada com sucesso!",
+      "successDescription": "Obrigado por entrar em contato, responderei o mais breve possível.",
+      "errorTitle": "Ocorreu um erro ao enviar sua mensagem!",
+      "errorDescription": "Por favor, tente novamente mais tarde ou entre em contato comigo através do meu linkedin."
+    }
+  }
+}

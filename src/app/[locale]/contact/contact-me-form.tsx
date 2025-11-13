@@ -21,9 +21,11 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { Loader2 } from 'lucide-react';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { useTranslations } from 'next-intl';
 
 export const ContactMeForm = () => {
   const [loading, setLoading] = useState(false);
+  const t = useTranslations("contact.form");
 
   const form = useForm<contactEmailSchema>({
     resolver: zodResolver(ContactEmailSchema),
@@ -47,11 +49,10 @@ export const ContactMeForm = () => {
 
       if (response.ok) {
         toast({
-          title: 'Your message was sent successfully!',
+          title: t('successTitle'),
           description: (
             <p className="tracking-tight text-muted-foreground">
-              Thank you for reaching out, I will get back to you as soon as
-              possible.
+              {t('successDescription')}
             </p>
           ),
         });
@@ -64,10 +65,10 @@ export const ContactMeForm = () => {
       console.error(error);
 
       toast({
-        title: 'There was an error sending your message!',
+        title: t('errorTitle'),
         description: (
           <p className="tracking-tight text-muted-foreground">
-            Please try again later or contact me through my linkedin.
+            {t('errorDescription')}
           </p>
         ),
       });
@@ -90,11 +91,11 @@ export const ContactMeForm = () => {
           name="fullName"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Full Name</FormLabel>
+              <FormLabel>{t('fullName')}</FormLabel>
               <FormControl>
-                <Input placeholder="Pedro Pereira" {...field} />
+                <Input placeholder={t('fullNamePlaceholder')} {...field} />
               </FormControl>
-              <FormDescription>Please enter your full name</FormDescription>
+              <FormDescription>{t('fullNameDescription')}</FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -105,11 +106,11 @@ export const ContactMeForm = () => {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email</FormLabel>
+              <FormLabel>{t('email')}</FormLabel>
               <FormControl>
-                <Input placeholder="email@email.com" {...field} />
+                <Input placeholder={t('emailPlaceholder')} {...field} />
               </FormControl>
-              <FormDescription>Please enter your email</FormDescription>
+              <FormDescription>{t('emailDescription')}</FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -120,10 +121,10 @@ export const ContactMeForm = () => {
           name="description"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Message</FormLabel>
+              <FormLabel>{t('message')}</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Feel free to send me a message."
+                  placeholder={t('messagePlaceholder')}
                   className="resize-none"
                   {...field}
                 />
@@ -136,10 +137,10 @@ export const ContactMeForm = () => {
           {loading ? (
             <>
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-              Please wait ...
+              {t('sending')}
             </>
           ) : (
-            'Send Message'
+            t('sendButton')
           )}
         </Button>
       </form>
