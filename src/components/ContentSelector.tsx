@@ -1,61 +1,66 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { Button } from './ui/button';
-import { usePathname } from 'next/navigation';
-import clsx from 'clsx';
+import Link from "next/link";
+import { Button } from "./ui/button";
+import { usePathname } from "next/navigation";
+import { useTranslations, useLocale } from "next-intl";
+import clsx from "clsx";
 
 export function ContentSelector() {
   const pathname = usePathname();
+  const t = useTranslations("nav");
+  const locale = useLocale();
+
+  const isActive = (path: string) => {
+    const localePath = `/${locale}${path}`;
+    return pathname === localePath;
+  };
 
   return (
     <section className="flex md:space-x-2 mb-8 px-4 md:px-0">
-      <Link href="/" passHref>
+      <Link href={`/${locale}`} passHref>
         <Button
           size="sm"
-          variant={pathname === '/' ? 'default' : 'ghost'}
-          className={clsx(
-            'text-sm',
-            pathname !== '/' && 'text-muted-foreground'
-          )}
+          variant={isActive("") ? "default" : "ghost"}
+          className={clsx("text-sm", !isActive("") && "text-muted-foreground")}
         >
-          About
+          {t("about")}
         </Button>
       </Link>
-      <Link href="/posts" passHref>
+      <Link href={`/${locale}/posts`} passHref>
         <Button
           size="sm"
-          variant={pathname === '/posts' ? 'default' : 'ghost'}
+          variant={isActive("/posts") ? "default" : "ghost"}
           className={clsx(
-            'text-sm',
-            pathname !== '/posts' && 'text-muted-foreground'
+            "text-sm",
+            !isActive("/posts") && "text-muted-foreground",
           )}
         >
-          Posts
+          {t("posts")}
         </Button>
       </Link>
-      <Link href="/newsletter" passHref>
+      <Link href={`/${locale}/newsletter`} passHref>
         <Button
           size="sm"
-          variant={pathname === '/newsletter' ? 'default' : 'ghost'}
+          variant={isActive("/newsletter") ? "default" : "ghost"}
           className={clsx(
-            'text-sm',
-            pathname !== '/newsletter' && 'text-muted-foreground'
+            "text-sm",
+            !isActive("/newsletter") && "text-muted-foreground",
           )}
         >
-          Newsletter
+          {t("newsletter")}
         </Button>
       </Link>
-      <Link href="/contact" passHref>
+      <Link href={`/${locale}/contact`} passHref>
         <Button
           size="sm"
-          variant={pathname === '/contact' ? 'default' : 'ghost'}
+          variant={isActive("/contact") ? "default" : "ghost"}
           className={clsx(
-            'text-sm',
-            pathname !== '/contact' && 'text-muted-foreground'
+            "text-sm",
+            !isActive("/contact") && "text-muted-foreground",
           )}
         >
-          Contact
+          {t("contact")}
         </Button>
       </Link>
     </section>
