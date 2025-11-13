@@ -38,7 +38,7 @@
       "achievements": [
         "Atuei como <technicalLead>líder técnico</technicalLead> liderando a reestruturação completa da arquitetura de serviços para APIaaS, projetada para escalar a milhões de requisições",
         "Desenvolvi documentação técnica abrangente incluindo RFCs, diagramas ERD e diagramas de sequência para garantir alinhamento técnico e clareza na execução",
-        "Atuei como referência técnica da equipe, traduzindo requisitos de negócio em tarefas técnicas executáveis e orientando 2 desenvolvedores",
+        "Atuei como referência técnica da equipe, traduzindo requisitos de negócio em tarefas técnicas executáveis e orientando desenvolvedores",
         "Construí bot de consulta de restrições veiculares usando AWS Lambda, Twilio e AWS Lex com processamento de pagamento via PIX e cartão de crédito",
         "Desenvolvi bot de escrow que atua como terceiro confiável em transações veiculares, automatizando liberação de fundos e reduzindo fraudes",
         "Implementei API backend escalável usando Bun, Elysia, PostgreSQL e BullMQ para mensageria assíncrona",

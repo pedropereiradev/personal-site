@@ -38,7 +38,7 @@
       "achievements": [
         "Served as <technicalLead>technical lead</technicalLead> driving complete restructuring of service architecture for APIaaS, designed to scale to millions of requests",
         "Developed comprehensive technical documentation including RFCs, ERD diagrams, and sequence diagrams to ensure technical alignment and execution clarity",
-        "Acted as team's technical reference, translating business requirements into executable technical tasks and mentoring 2 developers",
+        "Acted as team's technical reference, translating business requirements into executable technical tasks and mentoring developers",
         "Built vehicle restriction consultation bot using AWS Lambda, Twilio, and AWS Lex with payment processing via PIX and credit card",
         "Developed escrow bot that acts as trusted third party in vehicle transactions, automating fund release and reducing fraud",
         "Implemented scalable backend API using Bun, Elysia, PostgreSQL, and BullMQ for asynchronous messaging",
