@@ -1,7 +1,7 @@
 'use client';
 
 import { truncateText } from '@/utils/truncateText';
-import { AllDocumentTypes } from '../../../../prismicio-types';
+import { AllDocumentTypes } from '../../../../../prismicio-types';
 import Image from 'next/image';
 import { Skeleton } from '@/components/ui/skeleton';
 import { useRouter } from 'next/navigation';
